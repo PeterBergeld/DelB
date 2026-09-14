@@ -11,26 +11,30 @@ class Course
     
     public List<Student> Students { get; set; } = new List<Student>(); // List of students enrolled in the course
 
-    public void Enroll (Student student)
+    public bool Enroll (Student student) //Changing the returntype from void to bool, so reject a full course to accept new students
     {
-        if (Students.Count< MaxSeats) // Checks if there are any seats for potentiall students
-        Students.Add(student);
-        Students.Contains(student); // Checks the student aint in the list
+        // if (Students.Count< MaxSeats) // Checks if there are any seats for potentiall students
+        // Students.Add(student);
+        // Students.Contains(student); // Checks the student aint in the list
+        // return ;
 
         if (Students.Count < MaxSeats && !Students.Contains(student)) // If students count is less than the maxseats = det finns plats
         // && if the student doesnt exist.
         {
             Students.Add(student);
+            return true;
         }
         else if (Students.Contains(student))
         {
             
                 System.Console.WriteLine("Studenten är readn anmäld"); // If the student is already enrolled
-        }
+                return false;
+        }       
         else  // If the student is already enrolled he gets the message
         {
             
              Console.WriteLine("Kursen är full"); // If the course is already full 
+             return false;
         }
 
         public void Remove(Student student) // Secures so it wont crash if the student doenst exist
@@ -51,7 +55,7 @@ class Course
         return $"{Name} ({Students.Count}/{MaxSeats} platser)"; // Basics in the Course-class done
     }// unreachable code detected, sure i return it already yaa
         }
-
+// 22:23 09:14
 
        
 
