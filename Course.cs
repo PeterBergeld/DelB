@@ -1,5 +1,5 @@
 using System.Security.Cryptography.X509Certificates;
-// Really need to go over this code again 16:26 09-14-26
+// Really need to go over this code again 16:26 14-09-26
 // Alot of error-handling and some reading and more understanding of the code needed.
 // Understand the fundamentals and what it does, but need to place the 
 //exercise and code beside eachother
@@ -48,7 +48,6 @@ class Course
 
         public override string ToString()
     {
-        return Name;
         return $"{Name} ({Students.Count}/{MaxSeats} platser)"; // Basics in the Course-class done
     }// unreachable code detected, sure i return it already yaa
         }
@@ -57,4 +56,5 @@ class Course
        
 
         }
+        
     }
