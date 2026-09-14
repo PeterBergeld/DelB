@@ -8,7 +8,6 @@ class Course
 
     public void Enroll (Student student)
     {
-        Students.Count // 
         if (Students.Count< MaxSeats) // Checks if there are any seats for potentiall students
         Students.Add(student);
         Students.Contains(student); // Checks the student aint in the list
@@ -18,13 +17,14 @@ class Course
         {
             Students.Add(student);
         }
-        else 
+        else if (Students.Contains(student))
         {
-            Console.WriteLine("Kursen är full"); // If the course is already full 
-
+            
+                System.Console.WriteLine("Studenten är readn anmäld"); // If the student is already enrolled
         }
-        else if  (Students.Contains(student)) // If the student is already enrolled he gets the message
+        else  // If the student is already enrolled he gets the message
         {
-            System.Console.WriteLine("Studenten är readn anmäld");
+            
+             Console.WriteLine("Kursen är full"); // If the course is already full 
         }
 }
