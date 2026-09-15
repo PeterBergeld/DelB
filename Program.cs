@@ -35,3 +35,6 @@ programming.Remove(student2);
 student2.Schedule();
 student.Leave(course); // Now we are removing a student and going trou the list
 student.Schedule(); // Testing
+
+
+// 22:02 Last commit for tday. There is a day tmw also

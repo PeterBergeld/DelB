@@ -3,6 +3,8 @@
 
 
 class Student
+
+
 {
     public string? Name {get; set;} // added ? in student and Course so it can return an empty string, got some errors
     public List<Course> Courses{ get; set;} = new List<Course>();
