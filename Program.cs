@@ -17,6 +17,7 @@ Student student2 = new Student();
 student2.Name = "Anna";
 student2.Join(course);
 course.RollCall();
+student.Join(course); // The test to seee so the student cant be added twice
 
 Student student3 = new Student(); // adds a third student and expect the course to be full 
 student3.Name = "Erik";
