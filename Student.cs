@@ -5,7 +5,7 @@ using System.Security.Cryptography.X509Certificates;
 
 class Student
 {
-    public string Name {get; set;}
+    public string? Name {get; set;} // added ? in student and Course so it can return an empty string, got some errors
     public List<Course> Courses{ get; set;} = new List<Course>();
 
 
@@ -24,9 +24,10 @@ class Student
             Courses.Remove(course);
             course.Remove(this);
         }
+    }
 public override string ToString() // Should return the name
     {
-        return Name;
+        return Name ?? ""; // added ?? its not allowed to return null was the varning so added the ? 
     }
     public void Schedule()
     {
@@ -36,9 +37,10 @@ public override string ToString() // Should return the name
         }
     }
     }
-}
+
 
 
 //Student class done
+// dotnet with zero errors 20:00 09-15-26
 
 
