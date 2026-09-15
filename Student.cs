@@ -41,6 +41,6 @@ public override string ToString() // Should return the name
 
 
 //Student class done
-// dotnet with zero errors 20:00 09-15-26
+// dotnet with zero errors 20:21 09-15-26
 
 
