@@ -33,6 +33,8 @@ student3.Join(course);
 
 //Now whe wanna try to enroll directly from Course.Enroll
 
-programming.Enroll(student2);
+programming.Enroll(student2); // testing the cynco in both directions
 programming.RollCall();
+student2.Schedule();
+programming.Remove(student2);
 student2.Schedule();
