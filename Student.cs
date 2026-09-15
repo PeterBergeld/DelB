@@ -10,16 +10,20 @@ class Student
 
 
 
-    public void Join(Course course)
+   public void Join(Course course)          // If a student wants to join a course its from the enroll (this) and .Add to course
 {
-    course.Enroll(this); // This means that this actually object(Student) is what is executing Join() 
-    //Courses.Add(Course course) // False, Course is the class and course is the object, therefore
-
-        if (!Courses.Contains(course))      // En true/false läggs till
-        {
+    if (course.Enroll(this))
+    {
         Courses.Add(course);
+    }
+}
+    public void Leave(Course course)
+    {
+        if (Courses.Contains(course))
+        {
+            
         }
+    }
+}
 
-    
-}
-}
+
