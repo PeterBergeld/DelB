@@ -17,13 +17,28 @@ class Student
         Courses.Add(course);
     }
 }
-    public void Leave(Course course)
+    public void Leave(Course course)  // course in Course leaves . read Right --->Left 
     {
         if (Courses.Contains(course))
         {
-            
+            Courses.Remove(course);
+            course.Remove(this);
+        }
+public override string ToString() // Should return the name
+    {
+        return Name;
+    }
+    public void Schedule()
+    {
+        foreach (Course course in Courses)
+        {
+            System.Console.WriteLine(course); // Här kallar vi på course som är ett Course-Objekt (Tostring i Courses)
         }
     }
+    }
 }
+
+
+//Student class done
 
 
