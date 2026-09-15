@@ -22,12 +22,13 @@ class Course
         // && if the student doesnt exist.
         {
             Students.Add(student);
+            student.Courses.Add(this); // u are now taking the course
             return true;
         }
         else if (Students.Contains(student))
         {
             
-                System.Console.WriteLine("Studenten är readn anmäld"); // If the student is already enrolled
+                System.Console.WriteLine("Studenten är redan anmäld"); // If the student is already enrolled
                 return false;
         }       
         else  // If the student is already enrolled he gets the message
