@@ -37,15 +37,17 @@ class Course
              return false;
         }
 
+    }
         public void Remove(Student student) // Secures so it wont crash if the student doenst exist
     {
         if (Students.Contains(student)) 
         {
             Students.Remove(student);
         }
+    }
         public void RollCall() // We need to write all the members in the list
-        {
-            foreach (Student student in Students) 
+        
+            foreach (Student student in Students)
         {
             System.Console.WriteLine(student.Name);
         }
@@ -54,11 +56,14 @@ class Course
     {
         return $"{Name} ({Students.Count}/{MaxSeats} platser)"; // Basics in the Course-class done
     }// unreachable code detected, sure i return it already yaa
-        }
+        
 // 22:23 09:14
 
        
 
-        }
+    
+}
+
+
         
-    }
+    
