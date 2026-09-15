@@ -46,22 +46,21 @@ class Course
         }
     }
         public void RollCall() // We need to write all the members in the list
+        {
         
             foreach (Student student in Students)
         {
             System.Console.WriteLine(student.Name);
         }
-
+        }
         public override string ToString()
     {
         return $"{Name} ({Students.Count}/{MaxSeats} platser)"; // Basics in the Course-class done
     }// unreachable code detected, sure i return it already yaa
         
 // 22:23 09:14
+//Klammer korrektion, Måsye bli bättre. Rollcall needed to end before ToString line 20:08 15-09-26       
 
-       
-
-    
 }
 
 
