@@ -12,17 +12,12 @@ Student student = new Student(); // add the student
 student.Name = "Peter";
 
 student.Join(course);
-course.RollCall();
 student.Schedule();
-student.Leave(course); // Now we are removing a student and going trou the list
-student.Schedule();
-student.Leave(course); // and the last one, better leaves the course
+
 
 // Second student
 Student student2 = new Student();
 student2.Name = "Anna";
-student2.Join(course);
-course.RollCall();
 student2.Join(course); // The test to seee so the student cant be added twice
 
 
@@ -38,3 +33,5 @@ programming.RollCall();
 student2.Schedule();
 programming.Remove(student2);
 student2.Schedule();
+student.Leave(course); // Now we are removing a student and going trou the list
+student.Schedule(); // Testing

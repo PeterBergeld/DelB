@@ -1,7 +1,6 @@
 
 // hmm  20:31
 
-using System.Security.Cryptography.X509Certificates;
 
 class Student
 {
@@ -11,12 +10,12 @@ class Student
 
 
    public void Join(Course course)          // If a student wants to join a course its from the enroll (this) and .Add to course
-{
-    course.Enroll(this);
+
     {
-        Courses.Add(course); // We created a dubble add problem and we fixed this line to get ride. 
+    course.Enroll(this); // now its back to normal again 
     }
-}
+        
+    
     public void Leave(Course course)  // course in Course leaves . read Right --->Left 
     {
         if (Courses.Contains(course))
