@@ -44,6 +44,7 @@ class Course
         if (Students.Contains(student)) 
         {
             Students.Remove(student);
+            student.Courses.Remove(this); // both list need to get changed
         }
     }
         public void RollCall() // We need to write all the members in the list

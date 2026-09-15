@@ -1,5 +1,4 @@
-﻿using System.ComponentModel;
-using System.Threading.Tasks.Dataflow;
+﻿
 
 Course course = new Course(); // Yeah dunno why i did 2x of th
 course.Name = "Matematik";
@@ -36,3 +35,4 @@ student3.Join(course);
 
 programming.Enroll(student2);
 programming.RollCall();
+student2.Schedule();
