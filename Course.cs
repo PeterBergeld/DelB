@@ -61,7 +61,7 @@ class Course
     }// unreachable code detected, sure i return it already yaa
         
 // 22:23 09:14
-//Klammer korrektion, Måsye bli bättre. Rollcall needed to end before ToString line 20:08 15-09-26       
+//Klammer korrektion, Måste bli bättre. Rollcall needed to end before ToString line 20:08 15-09-26       
 
 }
 

@@ -1,0 +1,44 @@
+// Test kommandon Jorge extension CWL --> Console.WriteLine($"")
+// for (var i = 0; i < length; i++)
+// {
+    
+// }
+
+
+// for (var i = 0; i < length; i++)
+// {
+    
+// }
+
+// for (int i = 0; i < length; i++)
+// {
+    
+// }
+
+// Console.WriteLine($"aksnddsna {adadjba} {sjdasjlksd}");
+
+// Console.Clear();
+
+// class Program
+// {
+    
+// }
+
+// public class MyClass
+// {
+    
+// }
+
+// Console.WriteLine($"adadadashdvahdvahjdvahjvdjhadvjhasvdjhavdjhvajdvajhdvahdvjahvdahvdjhavdhjadvjhasvdhjavdhjavsdjhasdvjhsdavjh");
+
+
+// for (var i = 0; i < length; i++)
+// {
+    
+// }
+
+// for (int i = 0; i < length; i++)
+// {
+
+// Test kommandon Jorge extension CWL --> Console.WriteLine($"
+

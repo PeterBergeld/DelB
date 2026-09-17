@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\peter\\Desktop\\DelB\\DelB.csproj",
+      "projectUniqueName": "C:\\Users\\peter\\Desktop\\Inlämmningar\\DelB\\DelB.csproj",
       "projectName": "DelB",
-      "projectPath": "C:\\Users\\peter\\Desktop\\DelB\\DelB.csproj",
+      "projectPath": "C:\\Users\\peter\\Desktop\\Inlämmningar\\DelB\\DelB.csproj",
       "packagesPath": "C:\\Users\\peter\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\peter\\Desktop\\DelB\\obj\\",
+      "outputPath": "C:\\Users\\peter\\Desktop\\Inlämmningar\\DelB\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\peter\\AppData\\Roaming\\NuGet\\NuGet.Config"
